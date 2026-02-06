@@ -1,5 +1,10 @@
 body {
-  background-color: red;
+  margin: 0;
+  background-color: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
 }
   text-align: center;
   font-family: Arial, sans-serif;
