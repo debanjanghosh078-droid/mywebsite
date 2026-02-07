@@ -2,26 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Learning Website</title>
 
+  <!-- ===== STYLES (DO NOT DELETE) ===== -->
   <style>
     body {
       margin: 0;
-      background-color: black;
-      color: white;
-      text-align: center;
+      background-color: #0b0b0b;
+      color: #ffffff;
       font-family: Arial, sans-serif;
+      text-align: center;
     }
 
     header {
-      background-color: #111;
-      padding: 15px;
-      font-size: 22px;
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
     }
 
-    p {
-      color: #ccc;
-      font-size: 14px;
+    nav {
+      background-color: #111;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #00ffcc;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #00ffcc;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      margin: 15px auto;
+      padding: 15px;
+      border-radius: 12px;
+      max-width: 600px;
     }
 
     iframe {
@@ -34,30 +67,78 @@
 
     footer {
       background-color: #111;
-      padding: 10px;
+      padding: 15px;
       font-size: 13px;
-      margin-top: 20px;
+      color: #aaa;
+      margin-top: 30px;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #ccc;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- ===== HEADER ===== -->
   <header>
-    My Learning Website
+    🌟 My Learning Website 🌟
+    <div class="note">Learn • Practice • Grow</div>
   </header>
 
-  <p>Videos load automatically from my YouTube playlist</p>
+  <!-- ===== MENU ===== -->
+  <nav>
+    <a href="#english">English</a>
+    <a href="#hindi">Hindi</a>
+    <a href="#bengali">Bengali</a>
+    <a href="#videos">Videos</a>
+  </nav>
 
-  <!-- FIXED YOUTUBE PLAYLIST EMBED -->
-  <iframe
-    src="https://www.youtube-nocookie.com/embed?listType=playlist&list=PL37Yx3NgMgSPj9O761ifcYsCY1PdFNae3"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
+  <!-- ===== ENGLISH SECTION ===== -->
+  <section id="english">
+    <h2>📘 English</h2>
+    <div class="card">
+      <p>English learning, grammar, spoken practice and basics.</p>
+    </div>
+  </section>
 
+  <!-- ===== HINDI SECTION ===== -->
+  <section id="hindi">
+    <h2>📗 हिंदी</h2>
+    <div class="card">
+      <p>हिंदी में पढ़ाई, समझ और अभ्यास।</p>
+    </div>
+  </section>
+
+  <!-- ===== BENGALI SECTION ===== -->
+  <section id="bengali">
+    <h2>📕 বাংলা</h2>
+    <div class="card">
+      <p>বাংলায় পড়াশোনা, ব্যাখ্যা ও অনুশীলন।</p>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO SECTION ===== -->
+  <section id="videos">
+    <h2>🎥 Video Lessons</h2>
+    <div class="card">
+      <p class="note">Videos load automatically from YouTube playlist</p>
+
+      <!-- 🔴 ONLY CHANGE PLAYLIST ID HERE IN FUTURE -->
+      <iframe
+        src="https://www.youtube-nocookie.com/embed?listType=playlist&list=PL37Yx3NgMgSPj9O761ifcYsCY1PdFNae3"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer>
-    © 2026 My Website
+    © 2026 My Learning Website <br>
+    Built with ❤️ for learners
   </footer>
 
 </body>
